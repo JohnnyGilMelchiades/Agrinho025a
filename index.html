@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgroCommerce - Produtos do Campo para Restaurantes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">AgroCommerce</div>
+    <ul class="nav-links">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Produtos</a></li>
+      <li><a href="#" id="loginBtn">Login/Cadastro</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Produtos frescos direto do agricultor para o seu restaurante!</h1>
+    <p>Encontre o melhor do campo com facilidade e segurança.</p>
+  </header>
+  <main>
+    <section class="products">
+      <h2>Produtos Disponíveis</h2>
+      <div class="product-list" id="productList">
+        <!-- Produtos renderizados via JS -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 AgroCommerce. Todos os direitos reservados.</p>
+  </footer>
+  <!-- Modal de Login/Cadastro -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Acessar sua Conta</h2>
+      <form id="loginForm">
+        <input type="email" placeholder="E-mail" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+      </form>
+      <p>Não tem conta? <a href="#">Cadastre-se</a></p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
